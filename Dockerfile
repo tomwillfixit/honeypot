@@ -22,7 +22,6 @@ RUN wget http://www.openssl.org/source/openssl-1.0.1e.tar.gz && \
     cd openssl-1.0.1e && \
     ./config --prefix=${OPENSSH}/dist/ && make && make install
 
-
 # Build openssh
 
 RUN wget https://ftp.eu.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.2p1.tar.gz && \
@@ -33,7 +32,6 @@ COPY auth-passwd.c ${OPENSSH}/openssh-6.2p1/auth-passwd.c
 RUN cd openssh-6.2p1 && \
     useradd sshd && \
     ./configure --prefix=${OPENSSH}/dist/ --with-zlib=${OPENSSH}/dist --with-ssl-dir=${OPENSSH}/dist/ && make && make install 
-
 
 # Copy in sshd_config with syslog logging enabled and then the container is ready
 
