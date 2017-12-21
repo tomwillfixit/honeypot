@@ -41,7 +41,7 @@ root         7     1  0 15:29 pts/0    00:00:00 /bin/bash /tmp/start_honeypot.sh
 syslog      24     1  0 15:29 ?        00:00:00 /usr/sbin/rsyslogd
 root        31     1  0 15:29 ?        00:00:00 /opt/openssh2/dist/sbin/sshd -f 
 root        32     7  0 15:29 pts/0    00:00:00 ps -ef
-Tailing auth.log for failing connections
+Tailing auth.log for login attempts
 Dec 21 15:59:38 cfcde3edc46e sshd[52]: Honey: Username: root Password: admintrup
 Dec 21 15:59:38 cfcde3edc46e sshd[52]: Honey: Username: root Password: admintrup
 Dec 21 15:59:39 cfcde3edc46e sshd[52]: Honey: Username: root Password: admintrup
