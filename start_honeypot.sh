@@ -9,5 +9,5 @@ echo "Starting sshd"
 echo "Checking ps"
 ps -ef
 
-echo "Tailing auth.log for failing connections"
+echo "Tailing auth.log for login attempts"
 tail -f /var/log/auth.log |grep Honey
