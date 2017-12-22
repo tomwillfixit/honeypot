@@ -51,6 +51,8 @@ Dec 21 15:59:40 cfcde3edc46e sshd[52]: Honey: Username: root Password: system
 
 ```
 
+![](honeypot.gif)
+
 Using the source IP and this [site](http://ipheatmap.azurewebsites.net) you can generate a Heatmap.  
 
 That's as far as I've got. Thanks Jerry for your posts. Future plans include port scanning source IPs to see which ports are open out of curiosity.
