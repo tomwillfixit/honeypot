@@ -55,4 +55,18 @@ Dec 21 15:59:40 cfcde3edc46e sshd[52]: Honey: Username: root Password: system
 
 Using the source IP and this [site](http://ipheatmap.azurewebsites.net) you can generate a Heatmap.  
 
+## Find the location of the source IP 
+
+curl -X GET http://ip-api.com/json/103.217.152.20
+```
+{"as":"AS135259 SKYLINE INFONET PRIVATE LIMITED","city":"Sīkar","country":"India","countryCode":"IN","isp":"Skyline Infonet Private Limited","lat":27.6126,"lon":75.1457,"org":"Skyline Infonet Private Limited","query":"103.217.152.20","region":"","regionName":"Rajasthan","status":"success","timezone":"Asia/Kolkata","zip":""}
+```
+
+## Port and OS scan using nmap
+
+```
+nmap --top-ports 1000 -T4 -sC 218.65.30.126
+nmap -O -v 218.65.30.126
+```
+
 That's as far as I've got. Thanks Jerry for your posts. Future plans include port scanning source IPs to see which ports are open out of curiosity.
